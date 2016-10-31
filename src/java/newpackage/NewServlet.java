@@ -69,6 +69,7 @@ public class NewServlet extends HttpServlet {
         // added stuff ---------------------
         PrintWriter writer = response.getWriter();        
         writer.append("<HTML> <BODY> <INPUT TYPE = TEXT NAME = \"name\">");
+        writer.append("<HTML> <BODY> <INPUT TYPE = TEXT NAME = \"name2\">");
         
         String cookie = response.getHeader("Cookie");
         writer.append("<br>Cookie: " + cookie + "<br>"); 
